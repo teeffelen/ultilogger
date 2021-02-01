@@ -8,7 +8,7 @@ A useful python script that automaticaly logs the onboard sensors on your Ultima
 
 - [x] Local UTC time on printer (requires internet for NTP)
 - [x] Target and current bed temperature
-- [x] Target and current nozzle temperatures
+- [x] Target and current nozzle temperature(s)
 - [x] XYZ position of the print head
 - [ ] Flow sensor data (like filament used)
 - [ ] Layer height
@@ -19,14 +19,24 @@ A useful python script that automaticaly logs the onboard sensors on your Ultima
 - Option to use system time instead of requesting time from printer
 - Write code to add data points more easiliy
 
+## Supported printers
+
+| Model          | Supported  | Comments                          |
+| -------------- | :--------: | :-------------------------------- |
+| S5             | Yes        | Tested, works best using Ethernet |
+| S3             | ?          | Not tested yet                    |
+| 3              | No         |                                   |
+| 2+ Connect     | ?          | Not tested yet                    |
+| 2+             | No         |                                   |
+| 2 Extended+    | No         |                                   |
+| 2 Extended     | No         |                                   |
+| 2 Go           | No         |                                   |
+| 2              | No         |                                   |
+| Original       | No         |                                   |
+
 ## Dependencies
 
 - [Python](https://www.python.org/) >= 3.6
-  - [JSON](https://docs.python.org/3/library/json.html)
-  - [CSV](https://docs.python.org/3/library/csv.html)
-  - [Time](https://docs.python.org/3/library/time.html)
-  - [ArgParse](https://docs.python.org/3/library/argparse.html)
-  - [DateTime](https://docs.python.org/3/library/datetime.html)
 - [Requests](https://requests.readthedocs.io/en/master/)
 
 ## Using the script
