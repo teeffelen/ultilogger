@@ -21,18 +21,18 @@ A useful python script that automaticaly logs the onboard sensors on your Ultima
 
 ## Supported printers
 
-| Model          | Supported  | Comments                          |
-| -------------- | :--------: | :-------------------------------- |
-| S5             | Yes        | Tested, works best using Ethernet |
-| S3             | ?          | Not tested yet                    |
-| 3              | No         |                                   |
-| 2+ Connect     | ?          | Not tested yet                    |
-| 2+             | No         |                                   |
-| 2 Extended+    | No         |                                   |
-| 2 Extended     | No         |                                   |
-| 2 Go           | No         |                                   |
-| 2              | No         |                                   |
-| Original       | No         |                                   |
+| Model          | Supported  | Comments                  |
+| :------------- | :--------: | :------------------------ |
+| S5             | Yes        | Works best using Ethernet |
+| S3             | ?          | Not tested yet            |
+| 3              | No         |                           |
+| 2+ Connect     | ?          | Not tested yet            |
+| 2+             | No         |                           |
+| 2 Extended+    | No         |                           |
+| 2 Extended     | No         |                           |
+| 2 Go           | No         |                           |
+| 2              | No         |                           |
+| Original       | No         |                           |
 
 ## Dependencies
 
@@ -74,9 +74,7 @@ This file can be opened in Microsoft Excel or LibreOffice Calc:
 ![Result](./result.png)
 
 ## REST API
-The script uses the Ultimaker REST API, this API can be accessed over WiFi or directly using the Ethernet port.
-
-More information about the REST API can be found locally on the printer itself:
+The script uses the REST API on the printer, more information about the REST API can be found locally on the printer itself:
 
 - Connect the printer to your local network
 - Get the local IP of the printer from the touchscreen interface
