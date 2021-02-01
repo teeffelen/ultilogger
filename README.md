@@ -1,10 +1,10 @@
-# UltiLogger
+# Ulti-Logger
 
 A useful python script that automaticaly logs the onboard sensors on your Ultimaker 3D printer during prints.
 
-> **Note:** This is still a work-in-progress, suggestions are welcome!
+> **Note:** This is still a work-in-progress, suggestions and PR's are welcome!
 
-## Current features
+## Data points
 
 - [x] Local UTC time on printer (requires internet for NTP)
 - [x] Target and current bed temperature
@@ -15,8 +15,9 @@ A useful python script that automaticaly logs the onboard sensors on your Ultima
 
 ## Future features
 
-- Select which datapoints to log using argument flags
+- Option to select which data points to log
 - Option to use system time instead of requesting time from printer
+- Write code to add data points more easiliy
 
 ## Dependencies
 
@@ -28,24 +29,22 @@ A useful python script that automaticaly logs the onboard sensors on your Ultima
   - [DateTime](https://docs.python.org/3/library/datetime.html)
 - [Requests](https://requests.readthedocs.io/en/master/)
 
-## Using the logging script
+## Using the script
 
 > **Note:** Some people have said that [the WiFi connection drops out regularly](https://community.ultimaker.com/topic/29612-ultimaker-s5-disconnects-from-cura-connect-frequently/) during printing,
 it is recommend to [connect using an Ethernet cable](https://support.ultimaker.com/hc/en-us/articles/360012609519-How-to-connect-your-printer-to-the-network) for best results.
 
-- [Download this repository](https://github.com/Teeffelen/ultimaker-s5-logger/archive/main.zip)
-- Open a terminal in the `src/` directory
-- Type `python ultilogger.py -h` or `py ultilogger.py -h`, this will display the help page to get you started.
+1. [Download this repository](https://github.com/Teeffelen/ultimaker-s5-logger/archive/main.zip)
+2. Open a terminal in the `src/` directory
+3. Type `python ultilogger.py -h`, this will display the help page to get you started
 
 Example of running the `ultilogger.py` script in the terminal:
 
 ```
 $ python ultilogger.py -ip 192.168.10.102
-+------------------------------+
-| Ultilogger for Ultimaker S5  |
-|                              |
-| Press CTRL+C to exit         |
-+------------------------------+
++----------------------+
+| Press CTRL+C to exit |
++----------------------+
 
 - Using API address: http://192.168.10.102/api/v1
 - Output directory: ./log/
@@ -54,7 +53,11 @@ $ python ultilogger.py -ip 192.168.10.102
 
 The script will automaticaly start logging once it connects to the API and a printjob starts printing.
 
-Once the printjob is done, a `.csv` file will be created in the `log/` directory with the following format: `[Printer Name](start time of print) name of print.csv`.
+Once the printjob is done, a CSV file will be created with the following format:
+
+```
+[Printer Name](start time of print) name of print.csv
+```
 
 This file can be opened in Microsoft Excel or LibreOffice Calc:
 

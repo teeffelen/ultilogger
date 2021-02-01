@@ -153,11 +153,9 @@ def log_print(FILENAME):
 
 def main():
     # Print script information
-    print('+------------------------------+')
-    print('| Ultilogger for Ultimaker S5  |')
-    print('|                              |')
-    print('| Press CTRL+C to exit         |')
-    print('+------------------------------+')
+    print('+----------------------+')
+    print('| Press CTRL+C to exit |')
+    print('+----------------------+')
     print('\n- Using API address: ' + PRINTER_IP)
     print('- Output directory: ' + OUTPUT_DIR)
 
