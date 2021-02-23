@@ -25,14 +25,8 @@ A useful python script that automaticaly logs the onboard sensors on your Ultima
 | :------------- | :--------: | :------------------------ |
 | S5             | Yes        | Works best using Ethernet |
 | S3             | ?          | Not tested yet            |
-| 3              | No         |                           |
+| 3              | ?          | Not tested yet            |
 | 2+ Connect     | ?          | Not tested yet            |
-| 2+             | No         |                           |
-| 2 Extended+    | No         |                           |
-| 2 Extended     | No         |                           |
-| 2 Go           | No         |                           |
-| 2              | No         |                           |
-| Original       | No         |                           |
 
 ## Dependencies
 
